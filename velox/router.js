@@ -106,6 +106,7 @@
 
   function routeHref(page, q={}){
     const entryPath = /\.html?$/i.test(location.pathname) ? location.pathname : '/';
+    if (page === 'landing') return entryPath;
     return entryPath + '#' + routePath(page, q);
   }
 
@@ -153,6 +154,8 @@
 
     if (!opts.skipPush){
       try { history.pushState({ page, q }, '', routeHref(page, q)); } catch {}
+    } else if (page === 'landing' && location.hash) {
+      try { history.replaceState({ page, q }, '', routeHref(page, q)); } catch {}
     }
 
     // Update document title
