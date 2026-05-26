@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/", "destination": "/velox/Velox.html" },
+    { "source": "/styles.css", "destination": "/velox/styles.css" },
+    { "source": "/pages.css", "destination": "/velox/pages.css" },
+    { "source": "/shell.js", "destination": "/velox/shell.js" },
+    { "source": "/data.js", "destination": "/velox/data.js" },
+    { "source": "/landing.js", "destination": "/velox/landing.js" },
+    { "source": "/features.js", "destination": "/velox/features.js" },
+    { "source": "/pricing.js", "destination": "/velox/pricing.js" },
+    { "source": "/docs.js", "destination": "/velox/docs.js" },
+    { "source": "/blog.js", "destination": "/velox/blog.js" },
+    { "source": "/dashboard.js", "destination": "/velox/dashboard.js" },
+    { "source": "/auth.js", "destination": "/velox/auth.js" },
+    { "source": "/changelog.js", "destination": "/velox/changelog.js" },
+    { "source": "/router.js", "destination": "/velox/router.js" }
+  ]
+}
